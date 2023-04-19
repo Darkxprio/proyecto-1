@@ -1,0 +1,94 @@
+.header-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .7rem 1.5rem .7rem 1.5rem;
+}
+
+.header-right {
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.header-center {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.header-center button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.btn-bag {
+    border: none;
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.btn-bag::after {
+    content: "v";
+    position: relative;
+    bottom: 3px;
+    right: 10px;
+    font-size: .8rem;
+}
+
+.count-bag {
+    color: var(--white);
+    position: relative;
+    padding: 0 5px 0 5px;
+    background-color: red;
+    border-radius: 50%;
+    bottom: 7px;
+    right: 10px;
+    font-size: .7rem;
+}
+
+.search-box input {
+    display: none;
+}
+
+.search-btn {
+    width: 20px;
+}
+
+.telegram {
+    display: none;
+}
+
+.logo {
+    width: 45px;
+}
+
+.header-right::before {
+    content: "☰";
+    position: relative;
+    bottom: 17px;
+    font-size: 1rem;
+    font-weight: bold;
+}  
+
+.bag {
+    width: 15px;
+}
+
+@media screen and (min-width: 990px) {
+    .logo {
+        width: 90px;
+    }
+
+    .header-right::before {
+        display: none;
+    }
+
+    .search-box input {
+        display: block;
+    }
+
+    .telegram {
+        display: block;
+    }
+}

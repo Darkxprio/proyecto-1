@@ -1,0 +1,51 @@
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 2rem;
+    font-size: 0.60em;
+    color: #999999;
+    font-weight: 600;
+}
+
+.login {
+    display: none;
+}
+
+section hr {
+    height: 0.1rem;
+    max-width: 100%;
+    border: 0;
+}
+
+.first-hr {    
+    background-image: linear-gradient(to right, var(--secondary), var(--primary), var(--secondary));
+}
+
+.second-hr {    
+    background-image: linear-gradient(to right, var(--gray), var(--gray2), var(--gray));
+}
+
+.facebook {
+    width: 12px;
+    cursor: pointer;
+    margin: 0 1.5rem 0 1.5rem ;
+    padding: .25rem;    
+    border-radius: 50%;
+    transition: background-color .3s ease;
+}
+
+.facebook:hover {
+    background-color: #466bbc;
+}
+
+hr {
+    margin: 0;
+}
+
+@media screen and (min-width: 990px) {
+    .login {
+        display: block;
+        cursor: pointer;
+    }
+}
