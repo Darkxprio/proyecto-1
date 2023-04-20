@@ -71,6 +71,10 @@
     width: 45px;
 }
 
+.logo-largo {
+    display: none;
+}
+
 .header-right::before {
     content: "☰";
     position: relative;
@@ -98,6 +102,9 @@
     width: 15px;
 }
 
+.telegram a {
+    color: var(--third);
+}
 
 @media screen and (min-width: 990px) {
 
@@ -121,8 +128,12 @@
     }
 
     .logo {
-        width: 110px;
-        padding-left: 50px;
+        display: none;
+    }
+
+    .logo-largo {
+        display: block;
+        padding-left: 15px;
     }
 
     .header-right::before {
@@ -131,7 +142,7 @@
 
     .header-left {
         display: flex;
-        margin-left: 33px;
+        margin-left: 9px;
     }
 
     .header-center {
@@ -198,7 +209,8 @@
         width: 363px;
     }
     .header-left {
-        margin-left: 38px;
+        
+        margin-left: 50px;
     }
 
     .header-center {
@@ -216,5 +228,9 @@
 
     .logo {
         width: 150px;
+    }
+
+    .logo-largo {
+        padding-left: 0;
     }
 }
