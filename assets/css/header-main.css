@@ -1,8 +1,8 @@
 .header-main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: .7rem 1.5rem .7rem 1.5rem;
+    justify-content: center;
+    margin: 0 1.5rem 0 1.5rem;
 }
 
 .header-right {
@@ -14,12 +14,6 @@
     display: flex;
     flex: 1;
     justify-content: flex-end;
-}
-
-.header-center button {
-    border: none;
-    cursor: pointer;
-    background-color: var(--white);
 }
 
 .btn-bag {
@@ -34,6 +28,7 @@
     bottom: 3px;
     right: 10px;
     font-size: .8rem;
+    color: #777;
 }
 
 .count-bag {
@@ -47,8 +42,17 @@
     font-size: .7rem;
 }
 
-.search-box input {
+.header-center input {
     display: none;
+    background-color: #efeeef;
+    color: #777;
+    border: #fff;
+    height: 35px;
+    width: 282px;
+    padding: 0 15px 0 20px;
+    border-radius: 20px 0 0 20px;
+    border-right: 1px solid var(--white);
+    font-size: .8rem;
 }
 
 .search-btn {
@@ -57,6 +61,10 @@
 
 .telegram {
     display: none;
+}
+
+.telegram span {
+    font-size: .7rem;
 }
 
 .logo {
@@ -75,20 +83,138 @@
     width: 15px;
 }
 
+.header-center button {
+    border: none;
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.header-center input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.telegram a img {
+    width: 15px;
+}
+
+
 @media screen and (min-width: 990px) {
+
+    .header-main {
+        margin: auto;
+        max-width: 930px;
+    }
+
+    .header-center button {
+        display: flex;
+        align-items: center;
+        border: #fff;
+        background-color: #efeeef;
+        padding: 0 20px 0 20px;
+        border-radius: 0 20px 20px 0;
+        border-left: 1px solid var(--white);
+    }
+
+    .header-center input {
+        display: flex;
+    }
+
     .logo {
-        width: 90px;
+        width: 110px;
+        padding-left: 50px;
     }
 
     .header-right::before {
         display: none;
     }
 
-    .search-box input {
-        display: block;
+    .header-left {
+        display: flex;
+        margin-left: 33px;
+    }
+
+    .header-center {
+        display: flex;
+        flex: 0;
+        justify-content: center;
+        margin: 0 50px 0 50px;
+        
+    }
+
+    .header-right {
+        display: flex;
+        margin-right: 33px;
     }
 
     .telegram {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-right: 25px;
+    }
+
+    .btn-bag {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .btn-bag::before {
+        content: "l";
+        display: flex;
+        height: 1px;
+        font-size: 60px;
+        position: relative;
+        bottom: 23px;
+        right: 23px;
+        font-weight: 100;
+    }
+
+    .telegram a {
+        text-decoration: none;
+    }
+
+    .telegram a:hover {
+        color: black;
+    }
+
+    .telegram a span {
+        font-family: Oswald;
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .search-btn {
+        width: 15px;
+    }
+}
+
+@media screen and (min-width: 1150px)  {
+
+    .header-main {
+        max-width: 1100px;
+    }
+
+    .header-center input {
+        width: 363px;
+    }
+    .header-left {
+        margin-left: 38px;
+    }
+
+    .header-center {
+        margin: 0 80px 0 80px;
+    }
+
+    .header-right {
+        margin-right: 38px;
+    }
+
+    .btn-bag {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .logo {
+        width: 150px;
     }
 }
