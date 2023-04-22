@@ -3,62 +3,152 @@
     margin: 0;
 }
 
-.carousel {
+.carousel, .container-images {
     margin: auto;
-    width: 80vw;
+    width: 85vw;
     overflow: hidden;
+    position: relative;
 }
 
-@media screen and (min-width: 500px) {
-    .carousel {
-        width: 85vw;
-    }
+.container-images img {
+    padding-top: .8rem;
+    width: 100%;
 }
 
-@media screen and (min-width: 625px) {
-    .carousel {
-        width: 87vw;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    .carousel {
-        width: 50vw;
-    }
-}
-
-.container-items {
-    width: 200%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    transition: all .5s ease;
-    transform: translateX(0%);
-}
-
-.container-items img {
-    width: calc(100% / 2 - 2em);
-}
-
-.carousel ul {
+.container-dot {
     width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 20px;
+    left: 70px;
+}
+
+@media screen and (min-width: 400px) {
+    .carousel, .container-images {
+        width: 85vw;
+    }
+
+    .container-dot {
+        left: 90px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .container-dot {
+        left: 110px;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .carousel, .container-images {
+        width: 87vw;
+    }
+
+    .container-dot {
+        left: 160px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container-dot {
+        left: 200px;
+    }
+}
+
+
+@media screen and (min-width: 750px) {
+    .carousel-images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carousel {
+        flex-basis: 58%;
+        margin-right: 0;
+    }
+
+    .container-images {
+        flex-basis: 26%;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .carousel {
+        flex-basis: 59%;
+    }
+
+    .container-images {
+        flex-basis: 27%;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .carousel {
+        flex-basis: 59.5%;
+    }
+
+    .container-images {
+        flex-basis: 27.5%;
+    }
+}
+
+@media screen and (min-width: 990px) {
+
+    .carousel-images {
+        width: 910px;
+        margin: auto;
+    }
+    .carousel {
+        margin-top: 0;
+        flex-basis: 64%;
+    }
+
+    .container-images {
+        flex-basis: 32.5%;
+    }
+
+    .container-images img {
+        padding-top: .2rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .carousel-images {
+        width: 1100px;
+    }
+}
+
+.container-items {
+    width: 217%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.container-images {
+    padding-bottom: 1rem;
+}
+
+.container-items img {
+    width: calc(100% / 2 - 2rem);
 }
 
 .dot {
     display: flex;
-    width: .8rem;
+    width: .9rem;
     height: .2rem;
-    background-color: var(--gray);
-    margin: .2em;
+    background-color: var(--black);
+    margin: .2rem;
     
 }
 
 .dot.activo {
-    background-color: yellow;
+    background-color: var(--gray);
 }

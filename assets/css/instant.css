@@ -1,0 +1,125 @@
+.instant {
+    display: flex;
+    background-color: var(--third);
+    height: max-content;
+}
+
+.container-inst {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100% ;
+    margin: auto;
+}
+
+.container-inst h3 {
+    display: flex;
+    font-size: .87rem;
+    margin: 0;
+}
+
+.container-inst p {
+    display: flex;
+    font-size: .81rem;
+    margin: .2rem 0 0 0;
+}
+
+.container-inst div {
+    margin: 2rem 0 0 2rem;
+}
+
+.container-inst div:last-child {
+    margin-bottom: 2rem;
+}
+
+.container-inst div:first-child:before {
+    display: flex;
+    content: url(/assets/img/delivery.png);
+    position: relative;
+}
+
+.container-inst div:nth-child(2):before {
+    display: flex;
+    content: url(/assets/img/coin.png);
+    position: relative;
+}
+
+.container-inst div:last-child:before {
+    display: flex;
+    content: url(/assets/img/24-hours.png);
+    position: relative;
+}
+
+@media screen and (min-width: 600px) {
+    .container-inst {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 87vw;
+    }
+
+    .container-inst div {
+        margin-left: 0;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+    }
+
+    .container-inst p {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .container-inst div:last-child {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .container-inst {
+        width: 89vw;
+    }
+
+    .container-inst div:nth-child(2) {
+        margin-left: 2rem;
+    }
+
+    .container-inst div:last-child {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .container-inst {
+        width: 91vw;
+    }
+
+    .container-inst div:nth-child(2) {
+        margin-left: 2.5rem;
+    }
+
+    .container-inst div:last-child {
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .container-inst div:nth-child(2) {
+        margin-left: 3rem;
+    }
+
+    .container-inst div:last-child {
+        margin-left: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 945px) {
+    .container-inst div:nth-child(2) {
+        margin-left: 4rem;
+    }
+
+    .container-inst div:last-child {
+        margin-left: 4rem;
+    }
+}

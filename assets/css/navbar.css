@@ -18,7 +18,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 900px;
+        width: 905px;
     }
     
     .ele-left {
@@ -36,6 +36,7 @@
 
     .ele-left .index {
         color: var(--secondary-dark);
+        margin-left: .7rem;
     }
     
     .accounts::after {
@@ -73,7 +74,7 @@
 
 @media screen and (min-width: 1150px) {
     .container-ele {
-        width: 1077px;
+        width: 1100px;
     }
 }
 
