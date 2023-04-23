@@ -1,0 +1,131 @@
+.products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.products h2 {
+    font-size: .9rem;
+    text-align: initial;
+}
+
+.products {
+    margin: auto;
+    width: 85vw;
+}
+
+.product {
+    text-align: initial;
+    margin: 0 1rem 2rem 0;
+    overflow: hidden;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product p {
+    font-size: .9rem;
+    margin-bottom: .7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product button span {
+    font-size: .65rem;
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+}
+
+.product button {
+    padding: .5rem;
+    border: none;
+    background-color: var(--gray3);
+    transition: background-color .3s ease;
+}
+
+.product h3 {
+    height: 40.455px;
+    font-size: 1.1rem;
+    margin: .8rem 0 .8rem 0;
+}
+
+.star-container img {
+    width: 1rem;
+}
+
+.shine {
+    content: url(/assets/img/star-shine.png);
+}
+
+.product button:hover {
+    background-color: var(--third);
+}
+
+.product:hover .option::before {
+    content: url(/assets/img/right-arrow.png);
+    position: relative;
+    margin-right: .3rem;
+    top: 4px;
+}
+
+.product:hover .subs::before {
+    content: url(/assets/img/shopping-bag-little.png);
+    position: relative;
+    margin-right: .3rem;
+    top: 4px;
+}
+
+
+
+
+
+/* .product button:hover::before {
+    content: url(/assets/img/right-arrow.png);
+    position: relative;
+    top: 15px;
+    right: 20px;
+} */
+
+@media screen and (min-width: 600px) {
+    .products {
+        width: 87vw;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .products {
+        width: 89vw;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .products {
+        width: 91vw;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .products {
+        width: 890px;
+    }
+}
+
+
+@media screen and (min-width: 1150px) {
+    .products {
+        width: 1070px;
+    }
+
+    .products-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}

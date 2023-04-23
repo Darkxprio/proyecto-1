@@ -123,3 +123,27 @@
         margin-left: 4rem;
     }
 }
+
+@media screen and (min-width: 990px) {
+    .container-inst p {
+        display: block;
+    }
+
+    .container-inst {
+        width: 890px;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .container-inst {
+        width: 1070px;
+    }
+
+    .container-inst div:nth-child(2) {
+        margin-left: 7rem;
+    }
+
+    .container-inst div:last-child {
+        margin-left: 7rem;
+    }
+}

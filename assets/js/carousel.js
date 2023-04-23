@@ -5,7 +5,7 @@ dot.forEach(( every, i ) => {
     dot[i].addEventListener('click', ()=> {
 
         let position = i;
-        let operation = position * -50;
+        let operation = position * -53;
 
         container.style.transform = `translateX(${operation}%)`;
 
