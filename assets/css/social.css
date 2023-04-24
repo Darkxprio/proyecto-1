@@ -1,0 +1,81 @@
+.social-payment {
+    display: flex;
+    height: max-content;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 87vw;
+    margin: auto;
+}
+
+.social-payment div p {
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: .8rem;
+}
+
+.social-payment div img {
+    margin-bottom:1.5rem;
+    font-size: .8rem;
+}
+
+.social img {
+    width: 20px;
+    background-color: var(--third);
+    margin-right: .5rem;
+    padding: .2rem;
+}
+
+.fb-social:hover {
+    background-color: #3b5998;
+}
+
+.insta-social:hover {
+    background-color: #d62976;
+}
+
+.tele-social:hover {
+    background-color: #229ED9;
+}
+
+.methods {
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .social-payment {
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .social-payment {
+        width: 92vw;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .social-payment {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 900px;
+    }
+
+    .social img {
+        margin-top: 1.5rem;
+    }
+
+    .methods {
+        margin-top: 1.5rem;
+    }
+
+    .social-payment div p {
+        margin-top: 1.8rem;
+        font-size: .7rem;
+        text-align: initial;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .social-payment {
+        width: 1070px;
+    }
+}

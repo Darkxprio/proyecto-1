@@ -1,0 +1,122 @@
+.info {
+    display: flex;
+    background-color: var(--third);
+    height: max-content;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 94vw;
+    margin: auto;
+}
+
+.logo-footer {
+    width: 150px;
+    display: flex;
+}
+
+
+
+.my-account a {
+    font-size: .8rem;
+    margin-bottom: .3rem;
+}
+
+
+
+.contact p,a {
+    font-size: .8rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    color: var(--secondary-dark);
+    font-size: .75rem;
+    margin-bottom: .4rem;
+}
+
+.my-account, .contact {
+    margin: 0 0 0 1rem;
+}
+
+.my-account {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    margin-bottom: 1rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: initial;
+    margin-bottom: 1.5rem;
+
+}
+
+.container-info a:hover {
+    color: var(--secondary-dark);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 450px) {
+    .container-info {
+        width: 92vw;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .container-info {
+        width: 91vw;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container-info {
+        width: 94vw;
+    }
+}
+
+@media screen and (min-width: 660px) {
+    .container-info {
+        width: 92vw;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .container-info {
+        width: 93vw;
+    }
+}
+
+@media screen and (min-width: 830px) {
+    .container-info {
+        width: 95vw;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .container-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 920px;
+    }
+
+    .my-account {
+        margin-top: .8rem;
+    }
+    
+    .contact {
+        margin-top: .8rem;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .container-info {
+        width: 1100px;
+    }
+}
