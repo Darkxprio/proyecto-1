@@ -76,16 +76,44 @@
     top: 4px;
 }
 
+.product button:hover .btn-buy {
+    color: var(--white);
+}
 
+.product button:hover .option::before {
+    content: url(/assets/img/right-arrow-white.png);
+}
 
+.product button:hover .subs::before {
+    content: url(/assets/img/shopping-bag-white.png);
+}
 
-
-/* .product button:hover::before {
-    content: url(/assets/img/right-arrow.png);
+.promo-deezer::before {
+    content: "$4.550";
     position: relative;
-    top: 15px;
-    right: 20px;
-} */
+    color: #a7a7a7;
+    text-decoration: line-through;
+    font-size: .9rem;
+    margin-right: .3rem;
+}
+
+.promo-spoti1::before {
+    content: "$4.150";
+    position: relative;
+    color: #a7a7a7;
+    text-decoration: line-through;
+    font-size: .9rem;
+    margin-right: .3rem;
+}
+
+.promo-spoti3::before {
+    content: "$12.450";
+    position: relative;
+    color: #a7a7a7;
+    text-decoration: line-through;
+    font-size: .9rem;
+    margin-right: .3rem;
+}
 
 @media screen and (min-width: 600px) {
     .products {
